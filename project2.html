@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <title>TODOs List</title>
+  </head>
+  <!-- since we are using bootstrap css , so we are not using our own CSS thats y we have to put every thing in
+  HTML like <body style="background-color:#EEEEFF;">  -->
+  <body style="background-color:#EEEEFF;"> 
+    
+      <div class="container">
+          <h2 class="text-center" style="margin: 10px;"> 
+            <!-- we can also use <div class="container my-10"> instead of margin:10px  -->
+              TODOs List
+          </h2>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">ToDo:</label>
+            <input type="email" class="form-control" id="title" placeholder="What you want to do">
+            <!-- <button><i class="fas fa-plus"></i></button> -->
+            
+            </i></button>
+          </div>
+          <div class="form-group">
+            <label for="description">Description</label>
+            <textarea class="form-control" id='description' rows="1"></textarea>
+          </div>
+          <button class="btn btn-primary" id="add" style="margin: 5px;">Add</button>
+          <button  class="btn btn-primary" id="clear" onclick="clearStorage()" style="margin: 5px;">Clear</button>
+        <div id="items" class="class"style="margin: 5px;">
+          <h2><center>Your Items</center></h2>
+
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">SrNo.</th>
+                <th scope="col">ItemsTitle</th>
+                <th scope="col">ItemDescription</th>
+                
+              </tr>
+            </thead>
+            <tbody id="tablebody">
+              <tr>
+                <th scope="row">1</th>
+                <td>Coding</td>
+                <td>Lets Code!</td>
+                
+                <td><button class="btn btn-primary" aria-hidden="true">Delete</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>  
+        
+        
+        
+      </div>
+      
+    
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg="nest"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+    <script src="../project2/project2.js"></script>
+  </body>
+</html>
